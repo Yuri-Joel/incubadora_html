@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Estilizando o scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    /* Cor do thumb */
+    background-color: #bdbdc0;
+    /* Bordas arredondadas */
+    border-radius: 10px;
+    /* Cor da área em volta do thumb */
+    border: 3px solid #edf2f7;
+  }
+
+  ::-webkit-scrollbar-track {
+    /* Cor do track */
+    background: #fff;
+  }
+}
+
+/* classe para poder personalizar qualquer scrollbar na aplicação */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Scroll completamente invisível */
+@layer utilities {
+  .scrollbar-invisible {
+  -ms-overflow-style: none; /* Para IE e Edge */
+  scrollbar-width: none; /* Para Firefox */
+}
+}
+
+.scrollbar-invisible::-webkit-scrollbar {
+  display: none; /* Para Chrome, Safari e Opera */
+}
+
+
+
+/* Estilo adicional personalizado */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE e Edge */
+    scrollbar-width: none;    /* Firefox */
+  }
+  .partner-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .partner-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+
+  .logo-wrapper {
+    flex: 0 0 auto;
+    width: 8rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter 0.3s;
+  }
+
+  .logo-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .logo-wrapper:hover {
+    filter: grayscale(0%);
+  }
+
+  .animate-float {
+    animation: float 2s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  /* Adicionais utilitários se não estiver usando Tailwind */
+  .text-gray-100 { color: #f3f4f6; }
+  .hover\:text-blue-300:hover { color: #93c5fd; }
+  
+
+  @keyframes scroll-horizontal {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll-horizontal 25s linear infinite;
+  }
+  

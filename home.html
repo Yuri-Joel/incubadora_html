@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Início - IEMP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Poppins:wght@400&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="css/custom.css">
+  <style>
+    .animate-float {
+      animation: float 2s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 w-full">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center h-20">
+        <a href="/home.html" class="flex items-center">
+          <div class="h-20 w-24 relative mr-3">
+            <img src="/assets/images/image1.jpg" alt="Logo" class="object-contain h-full w-full" />
+          </div>
+          <span class="text-xl font-bold text-blue-900 italic">Incubadora de Empresas</span>
+        </a>
+
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="home.html" class="text-blue-900 hover:text-blue font-medium">Home</a>
+          <a href="about.html" class="text-blue-900 hover:text-blue font-medium">Sobre Nós</a>
+          <a href="register.html" class="text-blue-900 hover:text-blue font-medium">Inscreva-se</a>
+          <a href="program.html" class="text-blue-900 hover:text-blue font-medium">Programas</a>
+          <a href="#" class="text-blue-900 hover:text-blue font-medium">Contato</a>
+        </div>
+
+        <div class="md:hidden flex items-center">
+          <button id="menu-toggle" class="text-gray-700 hover:text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="md:hidden hidden py-4 border-t">
+        <div class="flex flex-col space-y-4">
+          <a href="home.html" class="text-gray-700 hover:text-blue-600 px-4 py-2 font-weight: bold;">Home</a>
+          <a href="about.html" class="text-gray-700 hover:text-blue-600 px-4 py-2 font-weight: bold;">Sobre Nós</a>
+          <a href="register.html" class="text-gray-700 hover:text-blue-600 px-4 py-2 font-weight: bold;">Inscreva-se</a>
+          <a href="program.html" class="text-gray-700 hover:text-blue-600 px-4 py-2 font-weight: bold;">Programas</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 px-4 py-2 font-weight: bold;">Contato</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="relative h-[500px] md:h-[600px] w-full overflow-hidden" id="hero-slider">
+    <div class="absolute inset-0 z-10 bg-black/50"></div>
+  
+    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide opacity-100">
+      <img src="/assets/images/slide.jpg" alt="Slide 1" class="w-full h-full object-cover absolute inset-0" />
+      <div class="absolute inset-0 z-20 flex items-center justify-center text-center px-4">
+        <div>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 max-w-3xl mx-auto">
+            Transforme sua ideia em um negócio de sucesso
+          </h1>
+          <p class="text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto">
+            Nossa incubadora oferece todo o suporte necessário para que sua startup cresça e se desenvolva.
+          </p>
+          <a href="/register/" class="bg-[#2e68b2] hover:bg-[#1d3d68] text-white font-bold py-3 px-8 rounded-full transition duration-300">
+            Inscreva-se Agora
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide opacity-0">
+      <img src="/assets/images/slide2.jpg" alt="Slide 2" class="w-full h-full object-cover absolute inset-0" />
+      <div class="absolute inset-0 z-20 flex items-center justify-center text-center px-4">
+        <div>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 max-w-3xl mx-auto">
+            Acesso a mentores e investidores
+          </h1>
+          <p class="text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto">
+            Conectamos você com os melhores mentores e investidores do mercado para impulsionar seu negócio.
+          </p>
+          <a href="#" class="bg-[#2e68b2] hover:bg-[#1d3d68] text-white font-bold py-3 px-8 rounded-full transition duration-300">
+            Conheça Nossos Programas
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide opacity-0">
+      <img src="/assets/images/slide3.jpg" alt="Slide 3" class="w-full h-full object-cover absolute inset-0" />
+      <div class="absolute inset-0 z-20 flex items-center justify-center text-center px-4">
+        <div>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 max-w-3xl mx-auto">
+            Infraestrutura completa para sua empresa
+          </h1>
+          <p class="text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto">
+            Espaço de coworking, salas de reunião, internet de alta velocidade e muito mais.
+          </p>
+          <a href="/about/" class="bg-[#2e68b2] hover:bg-[#1d3d68] text-white font-bold py-3 px-8 rounded-full transition duration-300">
+            Saiba Mais
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Botões -->
+    <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/30 rounded-full p-2 text-white transition-all duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+  
+    <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/30 rounded-full p-2 text-white transition-all duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  
+    <!-- Indicadores -->
+    <div class="absolute bottom-6 left-0 right-0 z-30 flex justify-center space-x-2" id="slider-indicators"></div>
+  </section>
+  
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="">
+   
+    <section class="observavel opacity-0 translate-y-12 transition-all duration-700 ease-out container mx-auto py-16 px-4">
+    <div class=" text-center mb-12">
+      <h2 class="text-3xl font-bold text-blue-700 mb-4">Bem-vindo à IEMP, Nossa Incubadora de Empresas</h2>
+      <p class="max-w-3xl mx-auto text-gray-700">
+        Transformamos ideias inovadoras em negócios de sucesso. Nossa incubadora oferece o suporte necessário para que sua empresa cresça e se desenvolva no mercado competitivo.
+      </p>
+    </div>
+
+    <div class=" grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-700 hover:-translate-y-2 hover:shadow-xl transition">
+        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-center text-blue-700 mb-2">Aceleração</h3>
+        <p class="text-center text-gray-600">Programas de aceleração para impulsionar o crescimento da sua empresa em tempo recorde.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-700 hover:-translate-y-2 hover:shadow-xl transition">
+        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-center text-blue-700 mb-2">Mentoria</h3>
+        <p class="text-center text-gray-600">Acesso a mentores experientes que irão guiar o desenvolvimento do seu negócio.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-700 hover:-translate-y-2 hover:shadow-xl transition">
+        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-center text-blue-700 mb-2">Investimento</h3>
+        <p class="text-center text-gray-600">Conexão com investidores e oportunidades de financiamento para sua startup.</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="/register/" class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-full transition">Inscreva sua Empresa</a>
+    </div>
+</section>
+    <section class="relative w-full py-20 bg-cover bg-center" style="background-image: linear-gradient(to right, rgba(219, 112, 53, 0.8), rgba(59, 89, 152, 0.8)), url('assets/images/bh-home.jpg'); min-height: 400px;">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 max-w-4xl mx-auto animate-pulse">
+            Aonde o seu sonho se torna Realidade
+          </h2>
+          <a href="/register" class="bg-[#2e68b2] hover:border-[#1e4f91] text-white font-bold py-3 px-8 rounded-md transition duration-300">
+            Bem vindo a IEMP
+          </a>
+        </div>
+      </section>
+    
+      <!-- Quem Somos -->
+      <section class="bg-gray-100 py-16 relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+          <div class="max-w-5xl">
+            <h2 class="text-4xl font-bold text-blue-700 mb-8">QUEM SOMOS</h2>
+            <p class="text-gray-800 mb-6 leading-relaxed">
+              Fortalecendo o Empreendedorismo e a Criação de Emprego
+              A Incubadora de Empresas do INEFOP fundada em 2007, é um espaço de inovação e apoio estratégico às Micro, Pequenas e Médias Empresas (MPME), com foco no desenvolvimento de startups e no fomento à empregabilidade. Com uma nova direção e um plano de relançamento ambicioso, a incubadora oferece programas de aceleração, mentoria, formação e acesso a financiamento, ajudando a transformar ideias em negócios sustentáveis e impactantes.
+            </p>
+            <a href="/about" class="inline-block bg-[#2e68b2] hover:border-[#1e4f91] hover:-translate-y-1 text-white font-bold py-3 px-8 rounded-md transition duration-300">
+              SAIBA MAIS...
+            </a>
+          </div>
+        </div>
+        <!-- Círculos decorativos -->
+        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 opacity-10">
+          <div class="w-96 h-96 border-8 border-blue-200 rounded-full"></div>
+          <div class="w-80 h-80 border-8 border-blue-200 rounded-full absolute top-8 left-8"></div>
+          <div class="w-64 h-64 border-8 border-blue-200 rounded-full absolute top-16 left-16"></div>
+          <div class="w-48 h-48 border-8 border-blue-200 rounded-full absolute top-24 left-24"></div>
+          <div class="w-32 h-32 border-8 border-blue-200 rounded-full absolute top-32 left-32"></div>
+        </div>
+      </section>
+    
+      <!-- Resultados -->
+      <section class="bg-blue-50 py-16">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center text-[#2e68b2] mb-8">Nossos Resultados</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <p class="text-4xl font-bold text-[#2e68b2]">+120</p>
+              <p class="text-gray-600">Startups incubadas</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <p class="text-4xl font-bold text-[#2e68b2]">85%</p>
+              <p class="text-gray-600">Taxa de sucesso</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <p class="text-4xl font-bold text-[#2e68b2]">15M Kz</p>
+              <p class="text-gray-600">Financiamento viabilizado</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+              <p class="text-4xl font-bold text-[#2e68b2]">+30</p>
+              <p class="text-gray-600">Mentores envolvidos</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Destaque Institucional -->
+      <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-[#2e68b2] text-center mb-10">Destaque Institucional</h2>
+          <div class="grid md:grid-cols-2 gap-10 items-start">
+            <!-- Texto -->
+            <div>
+              <h3 class="text-2xl font-semibold text-[#2e68b2] mb-4">
+                Incubadora participa na apresentação do Plano Estratégico 2025–2027 do INAPEM
+              </h3>
+              <p class="text-gray-700 text-justify leading-relaxed mb-4">
+                A convite da Direção do INAPEM, o Diretor da Incubadora de Empresas de Angola, Dr. Paulo Narciso , testemunhou a apresentação do Programa Estratégico 2025/2027. O evento, realizado no Anfiteatro do Instituto Sapiense, reuniu diversas personalidades de relevo, incluindo a Secretária de Estado para o Comércio e Indústria, o Vice-Governador para a Área Económica Dr. Jorge Miguêns, o Vice Presidente do BNI Dr. Sandro Africano, responsáveis de bancos comerciais e do Banco Nacional de Angola (BNA), bem como líderes de associações.
+              </p>
+              <p class="text-gray-700 text-justify leading-relaxed mb-4">
+                O principal objetivo do encontro foi a apresentação do Plano Estratégico do INAPEM 2025–2027, que visa transformar as ações da instituição num verdadeiro motor de desenvolvimento, atuando como um agente ativo no combate ao desemprego e à informalidade. Com esta visão, o INAPEM reafirma o seu compromisso com o crescimento das Micro, Pequenas e Médias Empresas (MPME), promovendo a formalização dos negócios e incentivando a valorização da produção nacional.
+              </p>
+              <p class="text-gray-700 text-justify leading-relaxed mb-4">
+                O evento foi presidido pelo Presidente do Conselho de Administração do INAPEM, Dr. Bráulio Augusto, que destacou a necessidade de fortalecer o ecossistema empresarial e de implementar políticas públicas eficazes para impulsionar o setor privado nacional.
+              </p>
+              <p class="text-gray-700 text-justify leading-relaxed">
+                Este encontro representou um marco importante na definição de estratégias para os próximos anos, consolidando o papel do INAPEM como um pilar essencial no apoio às empresas e na dinamização da economia angolana.
+              </p>
+            </div>
+    
+            <!-- Imagens -->
+            <div class="grid grid-cols-2 gap-4">
+              <div class="col-span-2">
+                <img src="assets/images/detalhes1.jpg" alt="Apresentação Plano Estratégico" class="rounded-lg w-full h-64 object-cover shadow-md" />
+              </div>
+              <img src="assets/images/detalhes2.jpg" alt="Participação do Diretor" class="rounded-lg h-48 object-cover shadow-md" />
+              <img src="assets/images/detalhes3.jpg" alt="Público presente no evento" class="rounded-lg h-48 object-cover shadow-md" />
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="bg-blue-50 py-16 opacity-0 translate-y-12 transition-all duration-700 ease-out observavel">
+        <div class="container mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-[#2e68b2] mb-4">Casos de Sucesso</h2>
+            <p class="text-gray-700 max-w-3xl mx-auto">
+              Conheça algumas das empresas que englobam a nossa incubadora e hoje são referência no mercado.
+            </p>
+          </div>
+      
+          <div class="flex justify-end gap-4 mb-4">
+            <button onclick="scrollCards('left')" class="bg-white p-2 rounded-full shadow hover:bg-blue-100">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#2e68b2]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+              </svg>
+            </button>
+            <button onclick="scrollCards('right')" class="bg-white p-2 rounded-full shadow hover:bg-blue-100">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#2e68b2]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+      
+          <div id="cardScroll" class="flex space-x-6 pb-4 scroll-smooth overflow-x-auto hide-scrollbar">
+            <!-- Cards -->
+            <div class="w-[320px] bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
+              <div class="h-48 bg-gray-200 relative">
+                <img src="assets/images/slide6.jpg" alt="AMAGUE" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-[#2e68b2] mb-1">AMAGUE</h3>
+                <p class="text-gray-600 text-sm mb-2 italic">- Américo André Guerra</p>
+                <p class="text-gray-600 text-sm">"Crescemos com apoio especializado no setor hospitalar."</p>
+              </div>
+            </div>
+      
+            <div class="w-[320px] bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
+              <div class="h-48 bg-gray-200 relative">
+                <img src="assets/images/slide2.jpg" alt="AFCC" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-[#2e68b2] mb-1">AFCC</h3>
+                <p class="text-gray-600 text-sm mb-2 italic">- António Francisco Catendo</p>
+                <p class="text-gray-600 text-sm">"A incubadora impulsionou nossa produção agrícola."</p>
+              </div>
+            </div>
+      
+            <div class="w-[320px] bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
+              <div class="h-48 bg-gray-200 relative">
+                <img src="assets/images/slide6.jpg" alt="AP ADVOGADOS" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-[#2e68b2] mb-1">AP ADVOGADOS</h3>
+                <p class="text-gray-600 text-sm mb-2 italic">- Agostinho Paulo</p>
+                <p class="text-gray-600 text-sm">"Expandimos nossa consultoria jurídica com confiança."</p>
+              </div>
+            </div>
+      
+            <div class="w-[320px] bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
+              <div class="h-48 bg-gray-200 relative">
+                <img src="assets/images/PCTA.jpg" alt="PCTA" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-[#2e68b2] mb-1">PCTA</h3>
+                <p class="text-gray-600 text-sm mb-2 italic">- Pamela António</p>
+                <p class="text-gray-600 text-sm">"Transformamos nossa contabilidade com novas ferramentas."</p>
+              </div>
+            </div>
+      
+            <div class="w-[320px] bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
+              <div class="h-48 bg-gray-200 relative">
+                <img src="assets/images/dopravi.jpg" alt="DOPRAVI" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-[#2e68b2] mb-1">DOPRAVI</h3>
+                <p class="text-gray-600 text-sm mb-2 italic">- Domingos Padra Inocêncio</p>
+                <p class="text-gray-600 text-sm">"Decolamos no transporte privado com suporte estratégico."</p>
+              </div>
+            </div>
+      
+            <div class="w-[320px] bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
+              <div class="h-48 bg-gray-200 relative">
+                <img src="assets/images/grupowen.jpg" alt="GRUPO WEN" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-[#2e68b2] mb-1">GRUPO WEN</h3>
+                <p class="text-gray-600 text-sm mb-2 italic">- Wela João Cassule</p>
+                <p class="text-gray-600 text-sm">"Ganhei visibilidade e conexões importantes."</p>
+              </div>
+            </div>
+      
+            <div class="w-[320px] bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
+              <div class="h-48 bg-gray-200 relative">
+                <img src="assets/images/VDMr.png" alt="GRUPO PF & VS" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-[#2e68b2] mb-1">GRUPO PF & VS</h3>
+                <p class="text-gray-600 text-sm mb-2 italic">- Paulo Francisco Almeida</p>
+                <p class="text-gray-600 text-sm">"Aprendemos a entregar serviços com excelência."</p>
+              </div>
+            </div>
+      
+            <div class="w-[320px] bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
+              <div class="h-48 bg-gray-200 relative">
+                <img src="assets/images/slide6.jpg" alt="TRAVELS" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-[#2e68b2] mb-1">TRAVELS</h3>
+                <p class="text-gray-600 text-sm mb-2 italic">- Alexandre Quental</p>
+                <p class="text-gray-600 text-sm">"Levamos nossa agência a novos destinos."</p>
+              </div>
+            </div>
+      
+            <div class="w-[320px] bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
+              <div class="h-48 bg-gray-200 relative">
+                <img src="assets/images/slide6.jpg" alt="KD E FILHOS" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-[#2e68b2] mb-1">KD E FILHOS</h3>
+                <p class="text-gray-600 text-sm mb-2 italic">- Kiafuca Maleta Diedone</p>
+                <p class="text-gray-600 text-sm">"Modernizamos nossa gráfica com inovação."</p>
+              </div>
+            </div>
+      
+            <div class="w-[320px] bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
+              <div class="h-48 bg-gray-200 relative">
+                <img src="assets/images/associajLuanda.png" alt="ASSOCIAÇÃO DOS JOVENS" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-[#2e68b2] mb-1">ASSOCIAÇÃO DOS JOVENS</h3>
+                <p class="text-gray-600 text-sm mb-2 italic">- Edvaldo Van Dunem</p>
+                <p class="text-gray-600 text-sm">"Fortalecemos a cooperação entre jovens."</p>
+              </div>
+            </div>
+      
+            <div class="w-[320px] bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
+              <div class="h-48 bg-gray-200 relative">
+                <img src="assets/images/acmar.png" alt="ACADÊMICA ACMAR" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-[#2e68b2] mb-1">ACADÊMICA ACMAR</h3>
+                <p class="text-gray-600 text-sm mb-2 italic">- Sivis Ndongala</p>
+                <p class="text-gray-600 text-sm">"Transformamos vidas por meio da formação."</p>
+              </div>
+            </div>
+      
+            <div class="w-[320px] bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
+              <div class="h-48 bg-gray-200 relative">
+                <img src="assets/images/slide6.jpg" alt="ANTOS COMÉRCIO" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-[#2e68b2] mb-1">ANTOS COMÉRCIO</h3>
+                <p class="text-gray-600 text-sm mb-2 italic">- Jorge Osvaldo Reis</p>
+                <p class="text-gray-600 text-sm">"Crescemos com soluções práticas e eficazes."</p>
+              </div>
+            </div>
+      
+            <div class="w-[320px] bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
+              <div class="h-48 bg-gray-200 relative">
+                <img src="assets/images/VDMr.png" alt="VD & MR" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-[#2e68b2] mb-1">VD & MR</h3>
+                <p class="text-gray-600 text-sm mb-2 italic">- José Van Dúnem</p>
+                <p class="text-gray-600 text-sm">"Oferecemos contabilidade com confiança e clareza."</p>
+              </div>
+            </div>
+      
+            <div class="w-[320px] bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
+              <div class="h-48 bg-gray-200 relative">
+                <img src="assets/images/ymca.png" alt="YMCA" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-[#2e68b2] mb-1">YMCA</h3>
+                <p class="text-gray-600 text-sm mb-2 italic">- Kanaluxau Pedro Castelo</p>
+                <p class="text-gray-600 text-sm">"Combinamos turismo e saúde com propósito."</p>
+              </div>
+            </div>
+      
+            <div class="w-[320px] bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
+              <div class="h-48 bg-gray-200 relative">
+                <img src="assets/images/slide6.jpg" alt="N.V. MAAN" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-[#2e68b2] mb-1">N.V. MAAN</h3>
+                <p class="text-gray-600 text-sm mb-2 italic">- Nole Glodi Maan</p>
+                <p class="text-gray-600 text-sm">"Nos destacamos em prestação de serviços confiáveis."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+<div class="opacity-0 translate-y-12 transition-all duration-700 ease-out observavel">
+    <footer class="bg-blue-100 py-8 overflow-hidden">
+        <div class="text-center mb-4">
+          <h3 class="text-xl font-bold text-[#2e68b2] mb-4">Nossos Parceiros</h3>
+        </div>
+      
+        <div class="relative w-full overflow-hidden">
+          <div class="animate-scroll flex w-max space-x-8 px-4">
+            <!-- Duplicado para dar looping contínuo -->
+            <div class="flex space-x-8">
+              <img class="h-16 object-contain" src="assets/images/image1.jpg" alt="Parceiro 1" />
+              <img class="h-16 object-contain" src="assets/images/image2.jpg" alt="Parceiro 2" />
+              <img class="h-16 object-contain" src="assets/images/image3.jpg" alt="Parceiro 3" />
+              <img class="h-16 object-contain" src="assets/images/image4.jpg" alt="Parceiro 4" />
+              <img class="h-16 object-contain" src="assets/images/image5.jpg" alt="Parceiro 5" />
+              <img class="h-16 object-contain" src="assets/images/image6.jpg" alt="Parceiro 6" />
+            </div>
+            <!-- Repetição para looping infinito -->
+            <div class="flex space-x-8">
+              <img class="h-16 object-contain" src="assets/images/image1.jpg" alt="Parceiro 1" />
+              <img class="h-16 object-contain" src="assets/images/image2.jpg" alt="Parceiro 2" />
+              <img class="h-16 object-contain" src="assets/images/image3.jpg" alt="Parceiro 3" />
+              <img class="h-16 object-contain" src="assets/images/image4.jpg" alt="Parceiro 4" />
+              <img class="h-16 object-contain" src="assets/images/image5.jpg" alt="Parceiro 5" />
+              <img class="h-16 object-contain" src="assets/images/image6.jpg" alt="Parceiro 6" />
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+  
+      <footer class="bg-[#2e68b2] text-white border-t">
+        <div class="container mx-auto py-12 px-4">
+          <div class="border-t border-white/30 pt-8 grid grid-cols-1 md:grid-cols-4 gap-8 text-left">
+            <div>
+              <h4 class="text-lg font-semibold mb-4">IEMP</h4>
+              <p class="font-bold mb-4">Aonde o seu sonho se torna Realidade</p>
+              <div class="flex space-x-4">
+                <a href="#" class="hover:text-blue-300">
+               
+        <svg  width="24" height="25" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.806 1.26818C23.5252 2.0016 23.76 3.66708 23.76 3.66708C23.76 3.66708 24 5.62336 24 7.57889V9.4128C24 11.3691 23.76 13.3246 23.76 13.3246C23.76 13.3246 23.5252 14.9901 22.806 15.7235C21.9837 16.5911 21.0719 16.6808 20.5565 16.7314C20.4998 16.737 20.4479 16.7421 20.4015 16.7477C17.043 16.9924 12 17 12 17C12 17 5.76 16.9426 3.84 16.7568C3.74903 16.7397 3.63876 16.7264 3.51388 16.7113C2.9057 16.6378 1.95113 16.5225 1.19325 15.7235C0.474 14.9901 0.24 13.3246 0.24 13.3246C0.24 13.3246 0 11.3691 0 9.4128V7.57889C0 5.62336 0.24 3.66708 0.24 3.66708C0.24 3.66708 0.474 2.0016 1.19325 1.26818C2.0174 0.399349 2.93006 0.310675 3.44548 0.260597C3.50136 0.255167 3.55258 0.250191 3.5985 0.244724C6.957 0 11.9948 0 11.9948 0H12.0052C12.0052 0 17.043 0 20.4015 0.244724C20.4474 0.250199 20.4987 0.255182 20.5546 0.260621C21.0696 0.310704 21.9827 0.39949 22.806 1.26818ZM9.52125 4.84387L9.522 11.635L16.0057 8.25112L9.52125 4.84387Z" fill="white"/>
+            </svg>
+                </a>
+                <a href="#" class="hover:text-blue-300">
+                    <svg  width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.8192 24.5H1.32462C0.592836 24.5 0 23.9068 0 23.1753V1.82461C0 1.09292 0.592929 0.5 1.32462 0.5H22.6755C23.407 0.5 24 1.09292 24 1.82461V23.1753C24 23.9069 23.4069 24.5 22.6755 24.5H16.5597V15.2059H19.6793L20.1464 11.5838H16.5597V9.27132C16.5597 8.22264 16.8509 7.50801 18.3546 7.50801L20.2727 7.50717V4.26755C19.9409 4.2234 18.8024 4.12478 17.4778 4.12478C14.7124 4.12478 12.8192 5.81276 12.8192 8.9126V11.5838H9.69156V15.2059H12.8192V24.5Z" fill="white"/>
+                        </svg>
+                </a>
+                <a href="#" class="hover:text-blue-300">
+                    <svg  width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.0286 2.5C14.1536 2.503 14.7246 2.509 15.2176 2.523L15.4116 2.53C15.6356 2.538 15.8566 2.548 16.1236 2.56C17.1876 2.61 17.9136 2.778 18.5506 3.025C19.2106 3.279 19.7666 3.623 20.3226 4.178C20.8313 4.67773 21.2248 5.28247 21.4756 5.95C21.7226 6.587 21.8906 7.313 21.9406 8.378C21.9526 8.644 21.9626 8.865 21.9706 9.09L21.9766 9.284C21.9916 9.776 21.9976 10.347 21.9996 11.472L22.0006 12.218V13.528C22.003 14.2574 21.9953 14.9868 21.9776 15.716L21.9716 15.91C21.9636 16.135 21.9536 16.356 21.9416 16.622C21.8916 17.687 21.7216 18.412 21.4756 19.05C21.2248 19.7175 20.8313 20.3223 20.3226 20.822C19.8228 21.3307 19.2181 21.7242 18.5506 21.975C17.9136 22.222 17.1876 22.39 16.1236 22.44L15.4116 22.47L15.2176 22.476C14.7246 22.49 14.1536 22.497 13.0286 22.499L12.2826 22.5H10.9736C10.2438 22.5026 9.51409 22.4949 8.78457 22.477L8.59057 22.471C8.35318 22.462 8.11584 22.4517 7.87857 22.44C6.81457 22.39 6.08857 22.222 5.45057 21.975C4.7834 21.7241 4.17901 21.3306 3.67957 20.822C3.17051 20.3224 2.77668 19.7176 2.52557 19.05C2.27857 18.413 2.11057 17.687 2.06057 16.622L2.03057 15.91L2.02557 15.716C2.00713 14.9868 1.9988 14.2574 2.00057 13.528V11.472C1.9978 10.7426 2.00514 10.0132 2.02257 9.284L2.02957 9.09C2.03757 8.865 2.04757 8.644 2.05957 8.378C2.10957 7.313 2.27757 6.588 2.52457 5.95C2.77626 5.2822 3.17079 4.67744 3.68057 4.178C4.17972 3.66955 4.78376 3.27607 5.45057 3.025C6.08857 2.778 6.81357 2.61 7.87857 2.56C8.14457 2.548 8.36657 2.538 8.59057 2.53L8.78457 2.524C9.51376 2.50623 10.2432 2.49857 10.9726 2.501L13.0286 2.5ZM12.0006 7.5C10.6745 7.5 9.40272 8.02678 8.46503 8.96447C7.52735 9.90215 7.00057 11.1739 7.00057 12.5C7.00057 13.8261 7.52735 15.0979 8.46503 16.0355C9.40272 16.9732 10.6745 17.5 12.0006 17.5C13.3267 17.5 14.5984 16.9732 15.5361 16.0355C16.4738 15.0979 17.0006 13.8261 17.0006 12.5C17.0006 11.1739 16.4738 9.90215 15.5361 8.96447C14.5984 8.02678 13.3267 7.5 12.0006 7.5ZM12.0006 9.5C12.3945 9.49993 12.7847 9.57747 13.1487 9.72817C13.5127 9.87887 13.8434 10.0998 14.122 10.3783C14.4007 10.6569 14.6217 10.9875 14.7725 11.3515C14.9233 11.7154 15.001 12.1055 15.0011 12.4995C15.0011 12.8935 14.9236 13.2836 14.7729 13.6476C14.6222 14.0116 14.4013 14.3423 14.1227 14.621C13.8442 14.8996 13.5135 15.1206 13.1496 15.2714C12.7856 15.4223 12.3955 15.4999 12.0016 15.5C11.2059 15.5 10.4429 15.1839 9.88025 14.6213C9.31764 14.0587 9.00157 13.2956 9.00157 12.5C9.00157 11.7044 9.31764 10.9413 9.88025 10.3787C10.4429 9.81607 11.2059 9.5 12.0016 9.5M17.2516 6C16.92 6 16.6021 6.1317 16.3677 6.36612C16.1333 6.60054 16.0016 6.91848 16.0016 7.25C16.0016 7.58152 16.1333 7.89946 16.3677 8.13388C16.6021 8.3683 16.92 8.5 17.2516 8.5C17.5831 8.5 17.901 8.3683 18.1355 8.13388C18.3699 7.89946 18.5016 7.58152 18.5016 7.25C18.5016 6.91848 18.3699 6.60054 18.1355 6.36612C17.901 6.1317 17.5831 6 17.2516 6Z" fill="white" />
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-blue-300">
+                    <svg  width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 3.5C19.5304 3.5 20.0391 3.71071 20.4142 4.08579C20.7893 4.46086 21 4.96957 21 5.5V19.5C21 20.0304 20.7893 20.5391 20.4142 20.9142C20.0391 21.2893 19.5304 21.5 19 21.5H5C4.46957 21.5 3.96086 21.2893 3.58579 20.9142C3.21071 20.5391 3 20.0304 3 19.5V5.5C3 4.96957 3.21071 4.46086 3.58579 4.08579C3.96086 3.71071 4.46957 3.5 5 3.5H19ZM18.5 19V13.7C18.5 12.8354 18.1565 12.0062 17.5452 11.3948C16.9338 10.7835 16.1046 10.44 15.24 10.44C14.39 10.44 13.4 10.96 12.92 11.74V10.63H10.13V19H12.92V14.07C12.92 13.3 13.54 12.67 14.31 12.67C14.6813 12.67 15.0374 12.8175 15.2999 13.0801C15.5625 13.3426 15.71 13.6987 15.71 14.07V19H18.5ZM6.88 9.06C7.32556 9.06 7.75288 8.883 8.06794 8.56794C8.383 8.25288 8.56 7.82556 8.56 7.38C8.56 6.45 7.81 5.69 6.88 5.69C6.43178 5.69 6.00193 5.86805 5.68499 6.18499C5.36805 6.50193 5.19 6.93178 5.19 7.38C5.19 8.31 5.95 9.06 6.88 9.06ZM8.27 19V10.63H5.5V19H8.27Z" fill="white"/>
+                        </svg>
+                                        </a>
+              </div>
+            </div>
+      
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Links Rápidos</h4>
+              <ul class="space-y-2">
+                <li><a href="/" class="text-gray-100 hover:text-blue-300">Home</a></li>
+                <li><a href="/about" class="text-gray-100 hover:text-blue-300">Sobre Nós</a></li>
+                <li><a href="/register" class="text-gray-100 hover:text-blue-300">Inscreva-se</a></li>
+                <li><a href="#" class="text-gray-100 hover:text-blue-300">Programas</a></li>
+                <li><a href="#" class="text-gray-100 hover:text-blue-300">Contato</a></li>
+              </ul>
+            </div>
+      
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Programas</h4>
+              <ul class="space-y-2">
+                <li><a href="/program#aceleracao" class="text-gray-100 hover:text-blue-300">Aceleração</a></li>
+                <li><a href="/program#mentoria" class="text-gray-100 hover:text-blue-300">Mentoria</a></li>
+                <li><a href="/program#investimento" class="text-gray-100 hover:text-blue-300">Investimento</a></li>
+                <li><a href="/program#networking" class="text-gray-100 hover:text-blue-300">Networking</a></li>
+                <li><a href="/program#workshops" class="text-gray-100 hover:text-blue-300">Workshops</a></li>
+              </ul>
+            </div>
+      
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Contato</h4>
+              <address class="not-italic text-gray-100">
+                <p class="mb-2">Kinaxixi - Rua da Missão, prédio da TAAG, 3º Andar, Luanda - Angola.</p>
+                <p class="mb-2">geral@iemp.ao<br />formacao@iemp.ao</p>
+                <p>+244 946 949 600</p>
+              </address>
+            </div>
+          </div>
+      
+          <div class="border-t border-white/30 mt-8 pt-8 text-center">
+            <p class="text-gray-100">&copy; 2025 IEMP. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </footer>     
+</div>
+<a
+href="https://wa.me/+244946949600"
+target="_blank"
+rel="noopener noreferrer"
+class="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 animate-float"
+aria-label="Whatsapp"
+>
+
+<svg
+xmlns="http://www.w3.org/2000/svg"
+class="h-10 w-10"
+fill="currentColor"
+viewBox="0 0 24 24"
+>
+<path d="M12.004 2.003c-5.525 0-9.997 4.47-9.997 9.995 0 1.766.466 3.49 1.35 5.01l-1.416 5.192 5.317-1.396c1.476.805 3.141 1.229 4.746 1.229 5.525 0 9.996-4.47 9.996-9.995s-4.47-9.995-9.996-9.995zm.005 17.991c-1.375 0-2.723-.375-3.908-1.085l-.279-.165-3.156.83.837-3.075-.18-.293c-.824-1.342-1.258-2.891-1.258-4.447 0-4.688 3.812-8.498 8.509-8.498 4.685 0 8.497 3.81 8.497 8.498s-3.812 8.498-8.497 8.498zm4.91-6.782c-.261-.131-1.54-.76-1.778-.847-.239-.088-.414-.131-.59.132-.175.263-.676.847-.828 1.022-.151.175-.303.197-.564.066-.262-.132-1.107-.408-2.108-1.301-.78-.694-1.305-1.552-1.458-1.814-.152-.263-.016-.404.115-.535.118-.117.263-.304.394-.456.132-.153.175-.263.263-.438.088-.175.044-.328-.022-.459-.066-.131-.59-1.419-.81-1.947-.214-.514-.43-.444-.59-.452l-.501-.009c-.175 0-.459.066-.7.328s-.918.897-.918 2.187.94 2.537 1.071 2.713c.131.175 1.848 2.82 4.477 3.953.626.27 1.114.43 1.495.549.628.2 1.2.172 1.65.105.503-.075 1.54-.628 1.757-1.235.218-.608.218-1.131.153-1.235-.066-.105-.239-.175-.5-.306z" />
+</svg>
+</a>
+
+  </main>
+
+  <!-- Menu JS -->
+  <script>
+
+    let currentSlide = 0;
+  const slides = document.querySelectorAll("#hero-slider .slide");
+  const indicatorsContainer = document.getElementById("slider-indicators");
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("opacity-100", i === index);
+      slide.classList.toggle("opacity-0", i !== index);
+    });
+
+    if (indicatorsContainer) {
+      indicatorsContainer.innerHTML = "";
+      slides.forEach((_, i) => {
+        const btn = document.createElement("button");
+        btn.className = `h-3 rounded-full transition-all duration-300 ${i === index ? 'bg-blue-600 w-6' : 'bg-white/50 w-3'}`;
+        btn.onclick = () => showSlide(i);
+        indicatorsContainer.appendChild(btn);
+      });
+    }
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  showSlide(currentSlide);
+  setInterval(nextSlide, 5000);
+
+  function scrollCards(direction) {
+    const container = document.getElementById('cardScroll')
+    const amount = 300
+    container.scrollBy({
+      left: direction === 'left' ? -amount : amount,
+      behavior: 'smooth'
+    })
+  }
+  </script>
+  <script src="js/observer.js"></script>
+</body>
+</html>

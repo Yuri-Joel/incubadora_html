@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="css/custom.css">
+  <style>
+    .animate-float {
+      animation: float 2s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 w-full">
+
+<!-- NAVBAR -->
+<nav class="bg-white shadow-md">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center h-20">
+      <a href="home.html" class="flex items-center">
+        <div class="h-20 w-24 relative mr-3">
+          <img src="/assets/images/image1.jpg" alt="Logo" class="object-contain h-full w-full" />
+        </div>
+        <span class="text-xl font-bold text-blue-900 italic">Incubadora de Empresas</span>
+      </a>
+
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="home.html" class="text-blue-900 hover:text-blue font-medium">Home</a>
+        <a href="about.html" class="text-blue-900 hover:text-blue font-medium">Sobre Nós</a>
+        <a href="register.html" class="text-blue-900 hover:text-blue font-medium">Inscreva-se</a>
+        <a href="program.html" class="text-blue-900 hover:text-blue font-medium">Programas</a>
+        <a href="#" class="text-blue-900 hover:text-blue font-medium">Contato</a>
+      </div>
+
+      <div class="md:hidden flex items-center">
+        <button id="menu-toggle" class="text-gray-700 hover:text-blue-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden hidden py-4 border-t">
+     <div class="flex flex-col space-y-4">
+          <a href="home.html" class="text-gray-700 hover:text-blue-600 px-4 py-2">Home</a>
+          <a href="about.html" class="text-gray-700 hover:text-blue-600 px-4 py-2">Sobre Nós</a>
+          <a href="register.html" class="text-gray-700 hover:text-blue-600 px-4 py-2">Inscreva-se</a>
+          <a href="program.html" class="text-gray-700 hover:text-blue-600 px-4 py-2">Programas</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 px-4 py-2">Contato</a>
+        </div>
+    </div>
+  </div>
+</nav>
+
+<!-- SOBRE NÓS -->
+<section class="container mx-auto py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <h1 class="text-3xl font-bold text-[#2e68b2] mb-4">Sobre Nós</h1>
+        <p class="text-gray-700 max-w-3xl mx-auto">
+          Conheça nossa história, missão e como estamos transformando o ecossistema de inovação.
+        </p>
+      </div>
+  
+      <!-- NOSSA HISTÓRIA -->
+      <div class="flex flex-col md:flex-row gap-8 items-center mb-16">
+        <div class="md:w-1/2">
+          <div class="relative h-80 w-full rounded-lg overflow-hidden shadow-lg">
+            <img src="assets/images/slide.jpg" alt="Nossa equipe" class="object-cover w-full h-full" />
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <h2 class="text-2xl font-bold text-[#2e68b2] mb-4">Nossa História</h2>
+          <p class="text-gray-700 mb-4">
+            Fundada em 2007, nossa incubadora nasceu da visão de criar um ambiente propício para o desenvolvimento
+            de startups inovadoras em Angola.
+          </p>
+          <div class="text-gray-700 text-justify space-y-4">
+            <p>
+              A Incubadora de Empresas do INEFOP é uma iniciativa do Ministério da Administração Pública, Trabalho e Segurança Social (MAPTSS), através do Instituto Nacional de Emprego e Formação Profissional (INEFOP), com a missão de impulsionar o ecossistema empreendedor angolano, apoiando a criação, desenvolvimento e consolidação de Micro, Pequenas e Médias Empresas (MPME).
+            </p>
+            <p>
+              Sob nova direção e com uma estratégia renovada, a incubadora está alinhada aos desafios do presente, apostando no apoio técnico e tecnológico, na capacitação de jovens empreendedores, no acesso ao financiamento, na empregabilidade, na inclusão digital e na automação.
+            </p>
+            <p>
+              O nosso objetivo é contribuir ativamente para a geração de emprego e a dinamização de negócios sustentáveis, oferecendo programas de formação, mentoria, networking e acesso a mercados. Atuamos como um espaço de inovação, colaboração e crescimento para todos os que desejam transformar ideias em negócios viáveis e competitivos.
+            </p>
+            <p>
+              A IEMP é regida pelo Decreto Executivo n.º 216/08 de 1 de Outubro, que aprova o seu estatuto orgânico, e é reconhecida como uma instituição de referência no apoio ao empreendedorismo em Angola.
+            </p>
+          </div>
+          <a href="https://www.inefop.gov.ao" target="_blank" class="text-blue-900 font-bold hover:underline">
+            🌐 Saiba mais em: www.inefop.gov.ao
+          </a>
+        </div>
+      </div>
+  
+      <!-- MISSÃO E VALORES -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-bold text-[#2e68b2] mb-6 text-center">Nossa Missão e Valores</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600 hover:border-[#1e4f91] hover:shadow-xl">
+            <h3 class="text-xl font-semibold text-[#2e68b2] mb-2">Missão</h3>
+            <p class="text-gray-700">Fomentar o ecossistema de inovação, apoiando empreendedores a transformarem ideias em negócios sustentáveis e de impacto.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600 hover:border-[#1e4f91] hover:shadow-xl">
+            <h3 class="text-xl font-semibold text-[#2e68b2] mb-2">Visão</h3>
+            <p class="text-gray-700">Ser reconhecida como a principal incubadora de empresas inovadoras, referência em metodologias de aceleração e desenvolvimento de negócios.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600 hover:border-[#1e4f91] hover:shadow-xl">
+            <h3 class="text-xl font-semibold text-[#2e68b2] mb-2">Valores</h3>
+            <p class="text-gray-700">Inovação, colaboração, ética, transparência e compromisso com resultados sustentáveis.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- EQUIPE -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-bold text-[#2e68b2] mb-6 text-center">Nossa Equipe</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden text-center">
+            <div class="h-48 bg-gray-200 relative">
+              <img src="assets/images/home.jpg" alt="Membro da equipe" class="object-cover w-full h-full" />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-[#2e68b2]">Paulo Victor Narciso</h3>
+              <p class="text-gray-600 text-sm">Director da IEMP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- IMPACTO -->
+      <div>
+        <h2 class="text-2xl font-bold text-[#2e68b2] mb-6 text-center">Nosso Impacto</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="bg-blue-50 p-6 rounded-lg">
+            <div class="text-3xl font-bold text-[#2e68b2] mb-2">100+</div>
+            <p class="text-gray-700">Empresas Incubadas</p>
+          </div>
+          <div class="bg-blue-50 p-6 rounded-lg">
+            <div class="text-3xl font-bold text-[#2e68b2] mb-2">50M+</div>
+            <p class="text-gray-700">Em Investimentos</p>
+          </div>
+          <div class="bg-blue-50 p-6 rounded-lg">
+            <div class="text-3xl font-bold text-[#2e68b2] mb-2">500+</div>
+            <p class="text-gray-700">Empregos Gerados</p>
+          </div>
+          <div class="bg-blue-50 p-6 rounded-lg">
+            <div class="text-3xl font-bold text-[#2e68b2] mb-2">30+</div>
+            <p class="text-gray-700">Mentores Ativos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<div class="opacity-0 translate-y-12 transition-all duration-700 ease-out observavel">
+    <footer class="bg-blue-100 py-8 overflow-hidden">
+        <div class="text-center mb-4">
+          <h3 class="text-xl font-bold text-[#2e68b2] mb-4">Nossos Parceiros</h3>
+        </div>
+      
+        <div class="relative w-full overflow-hidden">
+          <div class="animate-scroll flex w-max space-x-8 px-4">
+            <!-- Duplicado para dar looping contínuo -->
+            <div class="flex space-x-8">
+              <img class="h-16 object-contain" src="assets/images/image1.jpg" alt="Parceiro 1" />
+              <img class="h-16 object-contain" src="assets/images/image2.jpg" alt="Parceiro 2" />
+              <img class="h-16 object-contain" src="assets/images/image3.jpg" alt="Parceiro 3" />
+              <img class="h-16 object-contain" src="assets/images/image4.jpg" alt="Parceiro 4" />
+              <img class="h-16 object-contain" src="assets/images/image5.jpg" alt="Parceiro 5" />
+              <img class="h-16 object-contain" src="assets/images/image6.jpg" alt="Parceiro 6" />
+            </div>
+            <!-- Repetição para looping infinito -->
+            <div class="flex space-x-8">
+              <img class="h-16 object-contain" src="assets/images/image1.jpg" alt="Parceiro 1" />
+              <img class="h-16 object-contain" src="assets/images/image2.jpg" alt="Parceiro 2" />
+              <img class="h-16 object-contain" src="assets/images/image3.jpg" alt="Parceiro 3" />
+              <img class="h-16 object-contain" src="assets/images/image4.jpg" alt="Parceiro 4" />
+              <img class="h-16 object-contain" src="assets/images/image5.jpg" alt="Parceiro 5" />
+              <img class="h-16 object-contain" src="assets/images/image6.jpg" alt="Parceiro 6" />
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <footer class="bg-[#2e68b2] text-white border-t">
+        <div class="container mx-auto py-12 px-4">
+          <div class="border-t border-white/30 pt-8 grid grid-cols-1 md:grid-cols-4 gap-8 text-left">
+            <div>
+              <h4 class="text-lg font-semibold mb-4">IEMP</h4>
+              <p class="font-bold mb-4">Aonde o seu sonho se torna Realidade</p>
+              <div class="flex space-x-4">
+                <a href="#" class="hover:text-blue-300">
+               
+        <svg  width="24" height="25" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.806 1.26818C23.5252 2.0016 23.76 3.66708 23.76 3.66708C23.76 3.66708 24 5.62336 24 7.57889V9.4128C24 11.3691 23.76 13.3246 23.76 13.3246C23.76 13.3246 23.5252 14.9901 22.806 15.7235C21.9837 16.5911 21.0719 16.6808 20.5565 16.7314C20.4998 16.737 20.4479 16.7421 20.4015 16.7477C17.043 16.9924 12 17 12 17C12 17 5.76 16.9426 3.84 16.7568C3.74903 16.7397 3.63876 16.7264 3.51388 16.7113C2.9057 16.6378 1.95113 16.5225 1.19325 15.7235C0.474 14.9901 0.24 13.3246 0.24 13.3246C0.24 13.3246 0 11.3691 0 9.4128V7.57889C0 5.62336 0.24 3.66708 0.24 3.66708C0.24 3.66708 0.474 2.0016 1.19325 1.26818C2.0174 0.399349 2.93006 0.310675 3.44548 0.260597C3.50136 0.255167 3.55258 0.250191 3.5985 0.244724C6.957 0 11.9948 0 11.9948 0H12.0052C12.0052 0 17.043 0 20.4015 0.244724C20.4474 0.250199 20.4987 0.255182 20.5546 0.260621C21.0696 0.310704 21.9827 0.39949 22.806 1.26818ZM9.52125 4.84387L9.522 11.635L16.0057 8.25112L9.52125 4.84387Z" fill="white"/>
+            </svg>
+                </a>
+                <a href="#" class="hover:text-blue-300">
+                    <svg  width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.8192 24.5H1.32462C0.592836 24.5 0 23.9068 0 23.1753V1.82461C0 1.09292 0.592929 0.5 1.32462 0.5H22.6755C23.407 0.5 24 1.09292 24 1.82461V23.1753C24 23.9069 23.4069 24.5 22.6755 24.5H16.5597V15.2059H19.6793L20.1464 11.5838H16.5597V9.27132C16.5597 8.22264 16.8509 7.50801 18.3546 7.50801L20.2727 7.50717V4.26755C19.9409 4.2234 18.8024 4.12478 17.4778 4.12478C14.7124 4.12478 12.8192 5.81276 12.8192 8.9126V11.5838H9.69156V15.2059H12.8192V24.5Z" fill="white"/>
+                        </svg>
+                </a>
+                <a href="#" class="hover:text-blue-300">
+                    <svg  width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.0286 2.5C14.1536 2.503 14.7246 2.509 15.2176 2.523L15.4116 2.53C15.6356 2.538 15.8566 2.548 16.1236 2.56C17.1876 2.61 17.9136 2.778 18.5506 3.025C19.2106 3.279 19.7666 3.623 20.3226 4.178C20.8313 4.67773 21.2248 5.28247 21.4756 5.95C21.7226 6.587 21.8906 7.313 21.9406 8.378C21.9526 8.644 21.9626 8.865 21.9706 9.09L21.9766 9.284C21.9916 9.776 21.9976 10.347 21.9996 11.472L22.0006 12.218V13.528C22.003 14.2574 21.9953 14.9868 21.9776 15.716L21.9716 15.91C21.9636 16.135 21.9536 16.356 21.9416 16.622C21.8916 17.687 21.7216 18.412 21.4756 19.05C21.2248 19.7175 20.8313 20.3223 20.3226 20.822C19.8228 21.3307 19.2181 21.7242 18.5506 21.975C17.9136 22.222 17.1876 22.39 16.1236 22.44L15.4116 22.47L15.2176 22.476C14.7246 22.49 14.1536 22.497 13.0286 22.499L12.2826 22.5H10.9736C10.2438 22.5026 9.51409 22.4949 8.78457 22.477L8.59057 22.471C8.35318 22.462 8.11584 22.4517 7.87857 22.44C6.81457 22.39 6.08857 22.222 5.45057 21.975C4.7834 21.7241 4.17901 21.3306 3.67957 20.822C3.17051 20.3224 2.77668 19.7176 2.52557 19.05C2.27857 18.413 2.11057 17.687 2.06057 16.622L2.03057 15.91L2.02557 15.716C2.00713 14.9868 1.9988 14.2574 2.00057 13.528V11.472C1.9978 10.7426 2.00514 10.0132 2.02257 9.284L2.02957 9.09C2.03757 8.865 2.04757 8.644 2.05957 8.378C2.10957 7.313 2.27757 6.588 2.52457 5.95C2.77626 5.2822 3.17079 4.67744 3.68057 4.178C4.17972 3.66955 4.78376 3.27607 5.45057 3.025C6.08857 2.778 6.81357 2.61 7.87857 2.56C8.14457 2.548 8.36657 2.538 8.59057 2.53L8.78457 2.524C9.51376 2.50623 10.2432 2.49857 10.9726 2.501L13.0286 2.5ZM12.0006 7.5C10.6745 7.5 9.40272 8.02678 8.46503 8.96447C7.52735 9.90215 7.00057 11.1739 7.00057 12.5C7.00057 13.8261 7.52735 15.0979 8.46503 16.0355C9.40272 16.9732 10.6745 17.5 12.0006 17.5C13.3267 17.5 14.5984 16.9732 15.5361 16.0355C16.4738 15.0979 17.0006 13.8261 17.0006 12.5C17.0006 11.1739 16.4738 9.90215 15.5361 8.96447C14.5984 8.02678 13.3267 7.5 12.0006 7.5ZM12.0006 9.5C12.3945 9.49993 12.7847 9.57747 13.1487 9.72817C13.5127 9.87887 13.8434 10.0998 14.122 10.3783C14.4007 10.6569 14.6217 10.9875 14.7725 11.3515C14.9233 11.7154 15.001 12.1055 15.0011 12.4995C15.0011 12.8935 14.9236 13.2836 14.7729 13.6476C14.6222 14.0116 14.4013 14.3423 14.1227 14.621C13.8442 14.8996 13.5135 15.1206 13.1496 15.2714C12.7856 15.4223 12.3955 15.4999 12.0016 15.5C11.2059 15.5 10.4429 15.1839 9.88025 14.6213C9.31764 14.0587 9.00157 13.2956 9.00157 12.5C9.00157 11.7044 9.31764 10.9413 9.88025 10.3787C10.4429 9.81607 11.2059 9.5 12.0016 9.5M17.2516 6C16.92 6 16.6021 6.1317 16.3677 6.36612C16.1333 6.60054 16.0016 6.91848 16.0016 7.25C16.0016 7.58152 16.1333 7.89946 16.3677 8.13388C16.6021 8.3683 16.92 8.5 17.2516 8.5C17.5831 8.5 17.901 8.3683 18.1355 8.13388C18.3699 7.89946 18.5016 7.58152 18.5016 7.25C18.5016 6.91848 18.3699 6.60054 18.1355 6.36612C17.901 6.1317 17.5831 6 17.2516 6Z" fill="white" />
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-blue-300">
+                    <svg  width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 3.5C19.5304 3.5 20.0391 3.71071 20.4142 4.08579C20.7893 4.46086 21 4.96957 21 5.5V19.5C21 20.0304 20.7893 20.5391 20.4142 20.9142C20.0391 21.2893 19.5304 21.5 19 21.5H5C4.46957 21.5 3.96086 21.2893 3.58579 20.9142C3.21071 20.5391 3 20.0304 3 19.5V5.5C3 4.96957 3.21071 4.46086 3.58579 4.08579C3.96086 3.71071 4.46957 3.5 5 3.5H19ZM18.5 19V13.7C18.5 12.8354 18.1565 12.0062 17.5452 11.3948C16.9338 10.7835 16.1046 10.44 15.24 10.44C14.39 10.44 13.4 10.96 12.92 11.74V10.63H10.13V19H12.92V14.07C12.92 13.3 13.54 12.67 14.31 12.67C14.6813 12.67 15.0374 12.8175 15.2999 13.0801C15.5625 13.3426 15.71 13.6987 15.71 14.07V19H18.5ZM6.88 9.06C7.32556 9.06 7.75288 8.883 8.06794 8.56794C8.383 8.25288 8.56 7.82556 8.56 7.38C8.56 6.45 7.81 5.69 6.88 5.69C6.43178 5.69 6.00193 5.86805 5.68499 6.18499C5.36805 6.50193 5.19 6.93178 5.19 7.38C5.19 8.31 5.95 9.06 6.88 9.06ZM8.27 19V10.63H5.5V19H8.27Z" fill="white"/>
+                        </svg>
+                                        </a>
+              </div>
+            </div>
+      
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Links Rápidos</h4>
+              <ul class="space-y-2">
+                <li><a href="/" class="text-gray-100 hover:text-blue-300">Home</a></li>
+                <li><a href="/about" class="text-gray-100 hover:text-blue-300">Sobre Nós</a></li>
+                <li><a href="/register" class="text-gray-100 hover:text-blue-300">Inscreva-se</a></li>
+                <li><a href="#" class="text-gray-100 hover:text-blue-300">Programas</a></li>
+                <li><a href="#" class="text-gray-100 hover:text-blue-300">Contato</a></li>
+              </ul>
+            </div>
+      
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Programas</h4>
+              <ul class="space-y-2">
+                <li><a href="/program#aceleracao" class="text-gray-100 hover:text-blue-300">Aceleração</a></li>
+                <li><a href="/program#mentoria" class="text-gray-100 hover:text-blue-300">Mentoria</a></li>
+                <li><a href="/program#investimento" class="text-gray-100 hover:text-blue-300">Investimento</a></li>
+                <li><a href="/program#networking" class="text-gray-100 hover:text-blue-300">Networking</a></li>
+                <li><a href="/program#workshops" class="text-gray-100 hover:text-blue-300">Workshops</a></li>
+              </ul>
+            </div>
+      
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Contato</h4>
+              <address class="not-italic text-gray-100">
+                <p class="mb-2">Kinaxixi - Rua da Missão, prédio da TAAG, 3º Andar, Luanda - Angola.</p>
+                <p class="mb-2">geral@iemp.ao<br />formacao@iemp.ao</p>
+                <p>+244 946 949 600</p>
+              </address>
+            </div>
+          </div>
+      
+          <div class="border-t border-white/30 mt-8 pt-8 text-center">
+            <p class="text-gray-100">&copy; 2025 IEMP. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </footer>     
+</div>
+<script src="js/observer.js"></script>
+
+</body>
+</html>
