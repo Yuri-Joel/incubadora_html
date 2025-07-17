@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Página inicial -->
+  <url>
+    <loc>https://incubadoraiemp.ao/</loc>
+    <lastmod>2025-07-14T21:32:11+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://incubadoraiemp.ao/home.html</loc>
+    <lastmod>2025-07-14T21:32:11+00:00</lastmod>
+  </url>
+
+  <!-- Página de inscrição -->
+  <url>
+    <loc>https://incubadoraiemp.ao/inscricao.html</loc>
+    <lastmod>2025-07-14T21:32:11+00:00</lastmod>
+  </url>
+
+  <!-- Página sobre -->
+  <url>
+    <loc>https://incubadoraiemp.ao/sobre.html</loc>
+    <lastmod>2025-07-14T21:32:11+00:00</lastmod>
+  </url>
+
+  <!-- Página de parceiros -->
+  <url>
+    <loc>https://incubadoraiemp.ao/parceiros.html</loc>
+    <lastmod>2025-07-14T21:32:11+00:00</lastmod>
+  </url>
+
+  <!-- Página de contato -->
+  <url>
+    <loc>https://incubadoraiemp.ao/contato.html</loc>
+    <lastmod>2025-07-14T21:32:11+00:00</lastmod>
+  </url>
+
+</urlset>
